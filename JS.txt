@@ -1,0 +1,89 @@
+// Declaration and initialization of a variable
+let age = 25;
+
+// Accessing and modifying the variable
+console.log("Age:", age);  // Output: Age: 25
+
+// Modifying the variable
+age = 30;
+console.log("Updated Age:", age);  // Output: Updated Age: 30
+
+// Variables can hold different types of values
+let name = "John";
+let isStudent = true;
+
+// Using variables in a simple calculation
+let yearOfBirth = 2022 - age;
+console.log("Year of Birth:", yearOfBirth);  // Output: Year of Birth: 1992
+
+
+
+let name ='Mosh';   //String literal
+
+let age = 25;   // number literal  here, all kind of number like float or int in javaScript is type of number
+
+let firstName = undefined;
+let selectorColor =null;
+let isApproved = false; // boolean literal
+console.log(name);
+
+// Languages
+// static    like   string name = 'AMY';   it can not be change in future
+// dynamic   like  let name = 'AMY'; in dynamic language the type of vaariable can be chnge at run time
+
+// to check the type of variable type we use this keyword   (typeof VarialeName)
+
+// Object
+let person = {
+name: 'mosh',
+age: 30
+};
+console.log(person);
+
+// two ways to work withthis properties
+// 1st way:  DOT notation
+person.name = 'Maryam';  // also use to re-assign the property
+console.log(person.name);
+
+//2nd way: Bracket Notaion
+
+person['name']= 'MARY';
+console.log(person.name);
+
+// access property in dynamic way
+let selection ='name';
+person[selection]= 'MARY';
+console.log(person.name);
+
+
+// ARRAYS
+let selectorColors = ['red','neon'];
+console.log(selectorColors);
+
+// if youb want to access 1st element of array 
+let selectorColors = ['red','neon'];
+console.log(selectorColors[0]);
+
+let selectorColors = ['red','neon'];
+selectorColors[2] ='yellow';
+selectorColors[3] =5;
+console.log(selectorColors.length);
+
+// FUNCTION 
+
+//performing task displaay
+function greet(name, lastname) {
+console.log('Hello' + name + ' ' + lastname);
+}
+greet('ALI','khan');
+greet('ALina','sheik');
+
+
+function square(number){
+return number * number;
+}
+let number =square(3);
+console.log (number);
+
+//other way is
+console.log(square(2));
